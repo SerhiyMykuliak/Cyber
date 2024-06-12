@@ -1,0 +1,67 @@
+.package-card {
+    width: 520px;
+    border-radius: 7px;
+    background-color: #b09ada;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 4px #7744D9;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        margin: 35px 40px;
+        gap: 20px;
+    }
+
+    &__icon {
+        width: 80px;
+        height: 80px;
+    }
+
+    &__icon-image {
+        width: 100%;
+        height: 100%;
+    }
+
+    &__header {
+        font-size: 22px;
+        font-weight: 700;
+    }
+
+    &__text {
+        color: #202020;
+        font-size: 16px;
+    }
+
+    &::before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        background-color: #D9D9D9;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 7px;
+        transition: opacity 0.5s ease-in-out;
+        z-index: -1;
+    }
+    
+    &:hover::before {
+        opacity: 0;
+    }
+
+    @media (max-width: 1200px) {
+        width: 450px;
+    }
+
+    @media (max-width: 992px) {
+        width: 380px;
+        margin: 10px;
+    }
+      
+    @media (max-width: 768px) {
+        width: 100%;
+    }
+      
+
+}

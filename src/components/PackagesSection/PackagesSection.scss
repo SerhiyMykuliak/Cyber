@@ -1,0 +1,38 @@
+
+.packages-section{
+
+    width: 100%;
+    background-color: #F7F1FF;
+    display: flex;
+
+
+    &__content{
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__header{
+        color: black;
+        font-size: 40px;
+        width: 700px;
+        margin: 0 auto;
+        text-align: center; 
+        margin-bottom: 100px;
+
+        @media (max-width: 768px) {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__packages{
+        display: flex;
+        justify-content: space-between;
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+            width: 95%;
+            gap: 20px;
+        }
+    }
+
+}

@@ -1,0 +1,108 @@
+.App {
+  background-color: #F7F1FF;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  .body {
+    flex: 1;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  p {
+    font-size: 18px;
+    margin: 15px 0;
+  }
+
+  h1 {
+    margin-bottom: 20px;
+    color: black;
+  }
+
+  .content {
+    width: 90%;
+    max-width: 1120px;
+    margin: 100px auto;
+  }
+
+  @media (max-width: 1200px) {
+    .content {
+      width: 95%;
+      margin: 80px auto;
+    }
+  
+    h2 {
+      font-size: 26px;
+      width: auto;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .content {
+      width: 90%;
+      padding: 0 20px;
+      margin: 60px auto;
+    }
+  
+    p {
+      font-size: 16px;
+    }
+  
+    h1 {
+      font-size: 28px;
+    }
+  
+    h2 {
+      font-size: 24px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .content {
+      margin: 40px auto;
+      padding: 0 15px;
+    }
+  
+    p {
+      font-size: 14px;
+    }
+  
+    h1 {
+      font-size: 24px;
+    }
+  
+    h2 {
+      font-size: 20px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .content {
+      margin: 20px auto;
+      padding: 0 10px;
+    }
+  
+    p {
+      font-size: 13px;
+      margin: 10px 0;
+      width: 90%;
+    }
+  
+    h1 {
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
+  
+    h2 {
+      font-size: 16px;
+      width: auto;
+    }
+    h3{
+      font-size: 14px;
+    }
+  }
+}
